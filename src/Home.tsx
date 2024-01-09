@@ -1,3 +1,5 @@
+import Belt from "./Belt";
+
 function Home() {
   return (
     <>
@@ -53,6 +55,28 @@ function Home() {
           All networks at the palm of your hand , right there within single
           ecosystem.
         </p>
+        <div className="multichain__belt">
+          <div className="upper_belt">
+            <Belt coinName="SOLANA" />
+            <Belt coinName="USD" />
+          </div>
+          <div className="lower_belt">
+            <Belt coinName="DAI" />
+            <Belt coinName="ETHEREUM" />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div className="wallet section">
+        <div className="wallet__left"></div>
+        <div className="wallet__right">
+          <h2>Supported Wallets</h2>
+          <p>Explore growing list of supported wallets. More coming soon.</p>
+        </div>
+      </div>
+      <div className="cta section">
+        <h2>Sign up and enjoy most versatile wallet in crypto space.</h2>
+        <button className="button_black">START NOW</button>
       </div>
     </>
   );

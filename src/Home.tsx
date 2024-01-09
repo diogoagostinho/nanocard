@@ -1,7 +1,7 @@
 function Home() {
   return (
     <>
-      <div className="header__hero"></div>
+      <p>Home</p>
     </>
   );
 }

@@ -1,3 +1,52 @@
 * {
   font-family: "Outfit", sans-serif;
+  margin: 0;
+}
+
+h3 {
+  transition: all 0.15s ease-in;
+  font-size: 3.2ch;
+}
+
+h3:hover {
+  font-weight: 300;
+  .light-text {
+    font-weight: 500;
+  }
+}
+
+hr {
+  opacity: 30%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.light-text {
+  transition: all 0.15s ease-in;
+  font-weight: 300;
+}
+
+.navbar {
+  display: flex;
+  padding: 1.4rem 2.6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__right {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-text {
+  border-radius: 1vh;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in;
+}
+
+.navbar-text:hover {
+  background: rgba(0, 0, 0, 0.05);
 }

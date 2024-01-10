@@ -102,10 +102,49 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="cta section">
-        <div className="cta__content">
-          <h2>Sign up and enjoy most versatile wallet in crypto space.</h2>
-          <button className="button_black">START NOW</button>
+      <div className="cta">
+        <div className="cta__left-image">
+          <img src="../public/card5.png" />
+        </div>
+        <div className="cta__background">
+          <div className="cta__content">
+            <h2>Sign up and enjoy most versatile wallet in crypto space.</h2>
+            <button className="button_black">START NOW</button>
+          </div>
+        </div>
+        <div className="cta__right-image">
+          <img src="../public/card2.png" />
+        </div>
+      </div>
+      <div className="features section">
+        <h2>Loaded with features.</h2>
+        <h2>Free, forever.</h2>
+        <div className="feature__grid">
+          <div className="feature block1">
+            <img src="../public/eye.svg" />
+            <h2>Monitor your money</h2>
+            <p>
+              Track your spending on our dashboard to see where your money is
+              going
+            </p>
+          </div>
+          <div className="feature block2">
+            <img src="../public/gas.svg" />
+            <h2>Free of all fees</h2>
+            <p>
+              Never worry about high cost of transactions. We got it covered.
+            </p>
+          </div>
+          <div className="feature block3">
+            <div className="feature__block-left">
+              <img src="../public/key.svg" />
+              <h2>Secured.</h2>
+              <h2>By you.</h2>
+            </div>
+            <div className="feature__block-right">
+              <img src="../public/card1.png" />
+            </div>
+          </div>
         </div>
       </div>
     </>

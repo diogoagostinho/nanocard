@@ -5,6 +5,7 @@
 
 #root {
   overflow-x: hidden;
+  position: relative;
 }
 
 h3 {
@@ -366,17 +367,20 @@ button:hover {
 }
 
 .cta {
+  height: 36rem;
+}
+
+.cta__background {
   width: 100%;
   background-image: url(../public/blur2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  height: 26rem;
+  height: 70%;
   position: relative;
-
-  overflow-x: hidden;
-  overflow-y: hidden;
-  z-index: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 .cta__content {
@@ -388,7 +392,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  z-index: 2;
+  z-index: 1;
 }
 
 .cta__content h2 {
@@ -397,4 +401,115 @@ button:hover {
   font-weight: 500;
   color: #3b3b3b;
   width: 50%;
+}
+
+.cta__right-image,
+.cta__left-image {
+  position: absolute;
+  z-index: 10;
+}
+
+.cta__right-image img,
+.cta__left-image img {
+  width: 800px;
+  z-index: 10;
+  transition: all 0.1s ease-in;
+}
+
+.cta__left-image {
+  transform: translate(-50%, 40%);
+}
+.cta__right-image {
+  transform: translate(120%, -100%);
+}
+
+.features {
+  margin: 3rem 10rem;
+}
+
+.features h2 {
+  font-size: 4ch;
+  color: #3b3b3b;
+  font-weight: 600;
+}
+
+.feature__grid {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.block1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background: #131415;
+  color: #fff;
+  height: fit-content;
+  h2 {
+    color: #fff;
+  }
+  img {
+    margin: 6rem 0 5rem 3rem;
+  }
+  h2,
+  p {
+    margin-left: 3rem;
+  }
+  p {
+    margin-top: 1rem;
+    width: 80%;
+    padding-bottom: 3rem;
+  }
+}
+
+.block2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background: #b2d2f1;
+  height: fit-content;
+  p {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  h2 {
+    color: #000;
+  }
+  img {
+    margin: 4.5rem 0 3rem 3rem;
+  }
+  h2,
+  p {
+    margin-left: 3rem;
+  }
+  p {
+    margin-top: 1rem;
+    width: 80%;
+    padding-bottom: 3rem;
+  }
+}
+
+.block3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.feature h2 {
+  font-weight: 500;
+  font-size: 3.4ch;
+}
+
+.feature p {
+  font-size: 2ch;
+  font-weight: 300;
 }

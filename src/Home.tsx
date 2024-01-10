@@ -13,7 +13,7 @@ function Home() {
           <button className="button_black">START NOW</button>
         </div>
         <div className="header__right">
-          <img src="../public/card4.png" />
+          <img src="" />
         </div>
         <span className="header__info">
           We are in private alpha and accepting new users on a rolling basis.
@@ -68,10 +68,33 @@ function Home() {
       </div>
       <hr />
       <div className="wallet section">
-        <div className="wallet__left"></div>
+        <div className="wallet__left">
+          <div className="wallet__left-content">
+            <div className="wallet-item w1">
+              <img src="../public/metamask.png" />
+            </div>
+            <div className="wallet-item w2">
+              <img src="../public/trustwallet.svg" />
+            </div>
+            <div className="wallet-item w3">
+              <img src="../public/gnosis.svg" />
+            </div>
+            <div className="wallet-item w4">
+              <img src="../public/rainbow.png" />
+            </div>
+            <div className="wallet-item w5">
+              <img src="../public/ghost.png" />
+            </div>
+            <div className="wallet-item w6">
+              <img src="../public/authereum.svg" />
+            </div>
+          </div>
+        </div>
         <div className="wallet__right">
-          <h2>Supported Wallets</h2>
-          <p>Explore growing list of supported wallets. More coming soon.</p>
+          <div className="wallet__right-content">
+            <h2>Supported Wallets</h2>
+            <p>Explore growing list of supported wallets. More coming soon.</p>
+          </div>
         </div>
       </div>
       <div className="cta section">

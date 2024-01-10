@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 h3 {
   transition: all 0.15s ease-in;
   font-size: 3.2ch;
@@ -24,6 +28,46 @@ a {
   text-decoration: none;
 }
 
+button {
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.5ch;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+
+  transition: box-shadow 0.1s ease-in, transform 0.1s ease-in;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.button_black {
+  background: #000;
+}
+
+.button_black:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(46, 40, 255, 1) 0%,
+    rgba(240, 22, 255, 1) 100%
+  );
+}
+
+.button_color {
+  background: linear-gradient(
+    90deg,
+    rgba(46, 40, 255, 1) 0%,
+    rgba(240, 22, 255, 1) 100%
+  );
+}
+
+.button_color:hover {
+  background: #000;
+  box-shadow: 0 0 50px rgba(46, 40, 255, 1);
+}
+
 .light-text {
   transition: all 0.15s ease-in;
   font-weight: 300;
@@ -34,6 +78,8 @@ a {
   padding: 1.4rem 2.6rem;
   justify-content: space-between;
   align-items: center;
+
+  z-index: 2;
 }
 
 .navbar__right {
@@ -52,50 +98,7 @@ a {
 }
 
 .section {
-  margin: 6rem 0;
-}
-
-.upper_belt,
-.lower_belt {
-  display: flex;
-  gap: 10rem;
-}
-
-.upper_belt {
-  transform: translateX(-200px);
-  margin-bottom: 2rem;
-}
-
-.lower_belt {
-  transform: translateX(100px);
-}
-
-.belt {
-  width: 16rem;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  gap: 2rem;
-}
-
-.belt p {
-  font-family: "Syne", sans-serif;
-  font-weight: 600;
-}
-
-.coin-profile {
-  background: #000;
-  width: 1.4rem;
-  height: 1.4rem;
-  padding: 20px;
-  border-radius: 100px;
-}
-
-.coin-profile img {
-  width: 100%;
-  height: 100%;
+  margin: 10rem 0;
 }
 
 .wallet {
@@ -105,10 +108,6 @@ a {
   align-items: center;
   justify-content: center;
   gap: 10rem;
-}
-
-.wallet__left,
-.wallet__right {
 }
 
 .wallet__left-content {
@@ -130,6 +129,12 @@ a {
   align-items: center;
   text-align: center;
   border-radius: 100px;
+
+  transition: all 0.15s ease-in;
+}
+
+.wallet-item:hover {
+  box-shadow: 0 0 20px #dbdbdb;
 }
 
 .wallet-item img {
@@ -172,4 +177,224 @@ a {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.wallet__right-content {
+  color: #3b3b3b;
+}
+
+.wallet__right-content h2 {
+  font-size: 4ch;
+  font-weight: 500;
+}
+.wallet__right-content p {
+  font-size: 2ch;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 1rem;
+}
+
+.header {
+  width: 100%;
+  background-image: url(../public/blur1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.header__content {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.header__left {
+  width: 60%;
+  margin: 8rem 3rem;
+
+  position: relative;
+  z-index: 2;
+
+  h1 {
+    font-size: 5.4ch;
+    font-weight: 500;
+  }
+  p {
+    width: 75%;
+    font-size: 2.2ch;
+    color: #808080;
+    font-weight: 200;
+    margin: 1.6rem 0;
+  }
+}
+
+.header__right {
+  position: absolute;
+  transform: translate(95%, 60%);
+  z-index: 0;
+}
+
+.header__right img {
+  z-index: 0;
+  width: 650px;
+  transition: all 0.1s ease-in;
+}
+
+.header__right img:hover {
+  transform: scale(1.05);
+}
+
+.header__info {
+  padding: 0 0 1.6rem 2rem;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  color: #3b3b3b;
+}
+
+.information h2 {
+  font-size: 4ch;
+  font-weight: 500;
+}
+
+.information__blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  transition: all 0.1s ease-in;
+}
+
+.block:hover {
+  transform: translateY(-10px);
+}
+
+.block img {
+  width: 8rem;
+}
+
+.block h2 {
+  font-size: 3ch;
+}
+
+.block p {
+  font-size: 2ch;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.multichain {
+  color: #3b3b3b;
+}
+
+.multichain h2 {
+  font-size: 4ch;
+  font-weight: 500;
+  margin: 0 3rem;
+}
+
+.multichain__description {
+  font-size: 2ch;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 1rem 3rem 8rem 3rem;
+  width: 40%;
+}
+
+.upper_belt,
+.lower_belt {
+  display: flex;
+  gap: 10rem;
+}
+
+.upper_belt {
+  margin-bottom: 2rem;
+}
+
+.lower_belt {
+}
+
+.belt {
+  width: 16rem;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  gap: 2rem;
+
+  transition: all 0.13s ease-in;
+}
+
+.belt p {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+.belt:hover {
+  box-shadow: 0px 0px 20px rgba(48, 48, 48, 0.3);
+  cursor: pointer;
+}
+
+.coin-profile {
+  background: #000;
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+.coin-profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.cta {
+  width: 100%;
+  background-image: url(../public/blur2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 26rem;
+  position: relative;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 0;
+}
+
+.cta__content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.cta__content h2 {
+  margin-bottom: 2rem;
+  font-size: 4ch;
+  font-weight: 500;
+  color: #3b3b3b;
+  width: 50%;
 }

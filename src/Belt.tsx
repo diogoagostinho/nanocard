@@ -1,9 +1,16 @@
+let fileType: string;
+
 function Belt(props: { coinName: string }) {
+  if (props.coinName == "USD") {
+    fileType = ".png";
+  } else {
+    fileType = ".svg";
+  }
   return (
     <>
       <div className="belt">
         <div className="coin-profile">
-          <img src={"../public/" + props.coinName + ".svg"} />
+          <img src={"../public/" + props.coinName + fileType} />
         </div>
         <p>{props.coinName}</p>
       </div>

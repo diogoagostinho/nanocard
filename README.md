@@ -22,6 +22,9 @@ The aim of this project is to learn to code with React and TypeScript, along wit
 - Contact page
 - Animations
 - Responsive design
+- Tidy index.css styles
+- Tidy file structure
+- Change to React Production Build before deployment
 
 ---
 

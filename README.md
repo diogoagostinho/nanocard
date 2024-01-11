@@ -16,10 +16,10 @@ The aim of this project is to learn to code with React and TypeScript, along wit
 ### To Do:
 
 - ~~Navigation Bar~~
-- Footer
+- ~~Footer~~
 - ~~Home page~~
-- About page
-- Contact page
+- ~~About page~~
+- ~~Contact page~~
 - Animations
 - Responsive design
 - Tidy index.css styles

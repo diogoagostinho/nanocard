@@ -791,6 +791,16 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 760px) {
+  .other__body {
+    margin: 4rem;
+  }
+
+  .other__body p {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .navbar {
     flex-direction: column;

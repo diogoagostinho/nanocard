@@ -1,12 +1,26 @@
 import Footer from "./Footer";
+import { useInView } from "react-intersection-observer";
 
 function About() {
+  const [ref, inView] = useInView({ threshold: 0.5, triggerOnce: true });
+
   return (
     <>
       <div className="other__header">
-        <h1>About Us</h1>
+        <h1
+          ref={ref}
+          className={inView ? "other__anim animation-pages" : "other__anim"}
+        >
+          About Us
+        </h1>
       </div>
-      <div className="other__body">
+      <div
+        className={
+          inView
+            ? "other__body other__anim animation-pages"
+            : "other__body other__anim"
+        }
+      >
         <p>
           NanoCard is a website about a fictional platform to receive a card
           able to connect to various crypto wallets in order to use it's capital

@@ -1,16 +1,23 @@
 import { Routes, Route, Link } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 
 import "./index.css";
+import "./animations.css";
 
 function App() {
+  const [ref, inView] = useInView({ threshold: 0.5 });
+
   return (
     <>
       <div className="content">
-        <div className="navbar">
+        <div
+          ref={ref}
+          className={inView ? "navbar animation-navbar" : "navbar"}
+        >
           <div className="navbar__left">
             <Link to="/">
               <h3 className="navbar-title">
@@ -30,7 +37,6 @@ function App() {
             </Link>
           </div>
         </div>
-        <hr />
 
         <Routes>
           <Route index element={<Home />} />

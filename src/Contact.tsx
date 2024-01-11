@@ -1,12 +1,25 @@
 import Footer from "./Footer";
+import { useInView } from "react-intersection-observer";
 
 function Contact() {
+  const [ref, inView] = useInView({ threshold: 0.5, triggerOnce: true });
   return (
     <>
       <div className="other__header">
-        <h1>Contact Us</h1>
+        <h1
+          ref={ref}
+          className={inView ? "other__anim animation-pages" : "other__anim"}
+        >
+          Contact Us
+        </h1>
       </div>
-      <div className="other__body">
+      <div
+        className={
+          inView
+            ? "other__body other__anim animation-pages"
+            : "other__body other__anim"
+        }
+      >
         <p>In this case, contact me, because I made the website alone 😁.</p>
         <br />
         <a href="https://github.com/diogoagostinho" target="_blank">

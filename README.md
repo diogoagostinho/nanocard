@@ -20,7 +20,7 @@ The aim of this project is to learn to code with React and TypeScript, along wit
 - ~~Home page~~
 - ~~About page~~
 - ~~Contact page~~
-- Animations
+- ~~Animations~~
 - Responsive design
 - Tidy index.css styles
 - Tidy file structure

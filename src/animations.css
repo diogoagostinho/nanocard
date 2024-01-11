@@ -1,0 +1,47 @@
+.animation-opacity {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.4s ease-in;
+}
+
+.other__anim {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.animation-button {
+  opacity: 0;
+  animation-delay: 200ms;
+}
+
+.animation-card-image {
+  opacity: 1;
+  transform: translate(95%, 60%) rotate(0);
+}
+
+.animation-navbar,
+.animation-pages {
+  transform: none;
+  opacity: 1;
+}
+
+.animation-belt-right {
+  transform: translateX(100px);
+}
+
+.animation-belt-left {
+  transform: translateX(-100px);
+}
+
+.animation-cta {
+  transform: translateY(-50%) translateX(0%);
+}
+
+.animation-card-cta {
+  transform: translate(-50%, 40%);
+  opacity: 1;
+}
+
+.animation-features {
+  opacity: 1;
+}

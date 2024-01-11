@@ -279,8 +279,8 @@ function Home() {
               : "features section"
           }
         >
-          <h2 className="margin-content">Loaded with features.</h2>
-          <h2 className="margin-content">Free, forever.</h2>
+          <h2 className="featureTitle margin-content">Loaded with features.</h2>
+          <h2 className="featureTitle margin-content">Free, forever.</h2>
           <div className="grid__section margin-content">
             <div className="feature__grid">
               <div className="feature block1">

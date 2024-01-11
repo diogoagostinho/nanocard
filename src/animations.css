@@ -45,3 +45,10 @@
 .animation-features {
   opacity: 1;
 }
+
+@media screen and (max-width: 820px) {
+  .animation-card-image {
+    transform: none;
+    align-items: center;
+  }
+}

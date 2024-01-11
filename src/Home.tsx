@@ -25,7 +25,6 @@ function Home() {
           </p>
         </div>
         <img src="../public/blur1.jpg" className="background__1" />
-
         <div className="information section">
           <h2>Simple, Fast & Secure</h2>
           <div className="information__blocks">

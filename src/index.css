@@ -587,6 +587,48 @@ button:hover {
   }
 }
 
+.other__header {
+  width: 100%;
+  height: fit-content;
+  background-image: url(../public/blur1.jpg);
+  background-size: cover;
+}
+
+.other__header h1 {
+  font-size: 6ch;
+  font-weight: 500;
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.other__body {
+  margin: 6rem 10rem;
+  font-size: 2ch;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.main__footer {
+  width: 100%;
+  padding: 10rem 0 10rem 0;
+  background-color: #1f1f27;
+  color: #fff;
+}
+
+.other__link {
+  font-weight: 500;
+  padding-bottom: 1rem;
+  font-size: 2.1ch;
+
+  transition: all 0.16s ease;
+}
+
+.other__link:hover {
+  font-weight: 700;
+  transform: translateY(-3px);
+  text-shadow: 0px 0px 50px #6860f9;
+}
+
 @media screen and (min-width: 1500px) {
   .cta__right-image {
     transform: translate(175%, -100%);

@@ -101,7 +101,7 @@ function Home() {
                   : "header__right"
               }
             >
-              <img src="../public/card4.png" />
+              <img src="./card4.png" />
             </div>
           </div>
           <p
@@ -115,7 +115,7 @@ function Home() {
             We are in private alpha and accepting new users on a rolling basis.
           </p>
         </div>
-        <img src="../public/blur1.jpg" className="background__1" />
+        <img src="./blur1.jpg" className="background__1" />
         <div
           ref={refInformation}
           className={
@@ -127,7 +127,7 @@ function Home() {
           <h2>Simple, Fast & Secure</h2>
           <div className="information__blocks">
             <div className="block">
-              <img src="../public/secure.png" />
+              <img src="./secure.png" />
               <h2>Secure & Decentralized</h2>
               <p>
                 Experience full spectrum of blockchain features with our
@@ -135,7 +135,7 @@ function Home() {
               </p>
             </div>
             <div className="block">
-              <img src="../public/card3.png" />
+              <img src="./card3.png" />
               <h2>We got you covered</h2>
               <p>
                 Both Mastercard and Visa cards are supported to give you what
@@ -144,7 +144,7 @@ function Home() {
             </div>
           </div>
           <div className="block">
-            <img src="../public/balance.png" />
+            <img src="./balance.png" />
             <h2>Optimize your cashflow</h2>
             <p>
               Use our wallet to pay your bills, split bills, transfer and more.
@@ -212,22 +212,22 @@ function Home() {
           <div className="wallet__left">
             <div className="wallet__left-content">
               <div className="wallet-item w1">
-                <img src="../public/metamask.png" />
+                <img src="./metamask.png" />
               </div>
               <div className="wallet-item w2">
-                <img src="../public/trustwallet.png" />
+                <img src="./trustwallet.png" />
               </div>
               <div className="wallet-item w3">
-                <img src="../public/gnosis.png" />
+                <img src="./gnosis.png" />
               </div>
               <div className="wallet-item w4">
-                <img src="../public/rainbow.png" />
+                <img src="./rainbow.png" />
               </div>
               <div className="wallet-item w5">
-                <img src="../public/ghost.png" />
+                <img src="./ghost.png" />
               </div>
               <div className="wallet-item w6">
-                <img src="../public/authereum.svg" />
+                <img src="./authereum.svg" />
               </div>
             </div>
           </div>
@@ -250,7 +250,7 @@ function Home() {
                 : "cta__left-image"
             }
           >
-            <img src="../public/card5.png" />
+            <img src="./card5.png" />
           </div>
           <div
             ref={refCta}
@@ -268,7 +268,7 @@ function Home() {
             </div>
           </div>
           <div className="cta__right-image">
-            <img src="../public/card2.png" />
+            <img src="./card2.png" />
           </div>
         </div>
         <div
@@ -284,7 +284,7 @@ function Home() {
           <div className="grid__section margin-content">
             <div className="feature__grid">
               <div className="feature block1">
-                <img src="../public/eye.svg" />
+                <img src="./eye.svg" />
                 <h2>Monitor your money</h2>
                 <p>
                   Track your spending on our dashboard to see where your money
@@ -292,7 +292,7 @@ function Home() {
                 </p>
               </div>
               <div className="feature block2">
-                <img src="../public/gas.svg" />
+                <img src="./gas.svg" />
                 <h2>Free of all fees</h2>
                 <p>
                   Never worry about high cost of transactions. We got it
@@ -302,12 +302,12 @@ function Home() {
             </div>
             <div className="feature block3">
               <div className="feature__block-left">
-                <img src="../public/key.svg" />
+                <img src="./key.svg" />
                 <h2>Secured.</h2>
                 <h2>By you.</h2>
               </div>
               <div className="feature__block-right">
-                <img src="../public/card1.png" />
+                <img src="./card1.png" />
               </div>
             </div>
           </div>

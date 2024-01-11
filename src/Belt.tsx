@@ -6,11 +6,12 @@ function Belt(props: { coinName: string }) {
   } else {
     fileType = ".svg";
   }
+
   return (
     <>
       <div className="belt">
         <div className="coin-profile">
-          <img src={"../public/" + props.coinName + fileType} />
+          <img src={"./" + props.coinName.toLowerCase() + fileType} />
         </div>
         <p>{props.coinName}</p>
       </div>

@@ -12,7 +12,9 @@ function Home() {
                 Card designed for all your needs to help you manage your
                 spendings and reinvest money.
               </p>
-              <button className="button_black">START NOW</button>
+              <a href="https://github.com/diogoagostinho" target="_blank">
+                <button className="button_black">START NOW</button>
+              </a>
             </div>
             <div className="header__right">
               <img src="../public/card4.png" />
@@ -22,6 +24,8 @@ function Home() {
             We are in private alpha and accepting new users on a rolling basis.
           </p>
         </div>
+        <img src="../public/blur1.jpg" className="background__1" />
+
         <div className="information section">
           <h2>Simple, Fast & Secure</h2>
           <div className="information__blocks">
@@ -51,6 +55,7 @@ function Home() {
             </p>
           </div>
         </div>
+
         <hr />
         <div className="multichain section">
           <h2 className="margin-content">Multichain of Madness</h2>
@@ -110,7 +115,9 @@ function Home() {
           <div className="cta__background">
             <div className="cta__content">
               <h2>Sign up and enjoy most versatile wallet in crypto space.</h2>
-              <button className="button_black">START NOW</button>
+              <a href="https://github.com/diogoagostinho" target="_blank">
+                <button className="button_black">START NOW</button>
+              </a>
             </div>
           </div>
           <div className="cta__right-image">
@@ -155,7 +162,9 @@ function Home() {
           <div className="home__footer-content margin-content">
             <div className="home__footer-cta">
               <h2>Create an account and enjoy your free card experience.</h2>
-              <button className="button_color">START NOW</button>
+              <a href="https://github.com/diogoagostinho" target="_blank">
+                <button className="button_color">START NOW</button>
+              </a>
             </div>
 
             <hr />
@@ -163,7 +172,13 @@ function Home() {
               <h3 className="navbar-title">
                 Nano<span className="light-text">Card</span>
               </h3>
-              <p>© Diogo Agostinho, All Rights Reserved.</p>
+              <p>
+                ©{" "}
+                <a href="https://github.com/diogoagostinho" target="_blank">
+                  Diogo Agostinho
+                </a>
+                , All Rights Reserved.
+              </p>
             </div>
           </div>
         </div>

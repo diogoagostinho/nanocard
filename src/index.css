@@ -8,6 +8,16 @@
   position: relative;
 }
 
+.root__content {
+  z-index: 1;
+}
+
+.background__1 {
+  z-index: -1;
+  position: absolute;
+  transform: translate(-45%, 50%) rotate(90deg);
+}
+
 .margin-content {
   margin-left: 25vh;
   margin-right: 25vh;
@@ -16,6 +26,7 @@
 h3 {
   transition: all 0.15s ease-in;
   font-size: 3.2ch;
+  z-index: 1;
 }
 
 h3:hover {
@@ -27,11 +38,13 @@ h3:hover {
 
 hr {
   opacity: 30%;
+  z-index: 1;
 }
 
 a {
   color: #000;
   text-decoration: none;
+  z-index: 1;
 }
 
 button {
@@ -565,11 +578,41 @@ button:hover {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.8ch;
   }
+  a {
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.15s ease-in;
+  }
+  a:hover {
+    font-weight: 600;
+  }
 }
 
 @media screen and (min-width: 1500px) {
   .cta__right-image {
     transform: translate(175%, -100%);
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .margin-content {
+    margin-left: 15vh;
+    margin-right: 15vh;
+  }
+
+  .block3 {
+    height: 100%;
+  }
+
+  .feature__block-right {
+    transform: translate(0, 10%);
+  }
+  .feature__block-right img {
+    height: 90%;
+  }
+
+  .block1,
+  .block2 {
+    padding: 0 2rem 0 0;
   }
 }
 
